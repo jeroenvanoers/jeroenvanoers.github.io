@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>AR Test</title>
+  <meta name="description" content="AR Test">
+
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+
+        <a-marker preset="hiro">
+          <!-- Adding an OBJ file to an AR Project-->
+            <a-entity 
+                collada-model="url(/object/uploads_files_2465920_burger_merged.dae)">
+            </a-entity>
+        </a-marker>
+
+    <a-entity camera>
+
+    </a-scene>
+  </body>
+
+</html>
