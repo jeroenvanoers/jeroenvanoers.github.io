@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.51.0/dist/phaser-arcade-physics.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser-matter-collision-plugin"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
+</head>
+
+<body style="background-color: black;">
+
+<div class="top-left"></div>
+
+<div class="top-left-center"></div>
+
+<div class="top-right-center"></div>
+
+<div class="top-right"></div>
+
+<div class="bottom-left"></div>
+
+<div class="bottom-center"></div>
+
+<div class="bottom-right"></div>
+
+<div class="shop"></div>
+
+<div class="menu"></div>
+
+<div class="sidemenu">
+    <div class="sidemenu-settings"></div>
+    <div class="sidemenu-help"></div>
+    <div class="sidemenu-shop"></div>
+    <div class="sidemenu-friends"></div>
+    <div class="sidemenu-leave"></div>
+</div>
+
+<div class="container-custom">
+    <div class="setting-modal">
+        <div class="setting-modal-content">
+            <span class="setting-close">&times;</span>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-flex" style="margin-bottom: 50px;">
+                        <h2 class="modal-title">Instellingen</h2>
+                    </div>
+                    <div class="col-6">
+                        <div class="bar">
+                            <h3 class="modal-text">Muziek</h3>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="bar">
+                            <h3 class="modal-text">Notificaties</h3>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="bar">
+                            <h3 class="modal-text">Cookies</h3>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bar">
+                            <h3 class="modal-text">Geluidseffecten</h3>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="help-modal">
+        <div class="setting-modal-content">
+            <span class="setting-close">&times;</span>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-flex" style="margin-bottom: 50px;">
+                        <h2 class="modal-title">Uitleg</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="uitleg-text">
+                            Welkom bij de vegetarische McDonald's boerderij van 2030! Met de producten van het land kun je 5 overheerlijke vegetarische producten maken en nog veel meer!<br><br>
+                            Door het verzorgen van varkens en paarden kun je bonuspunten verdienen die je aan het restaurant kunt besteden.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="shop-modal">
+        <div class="setting-modal-content">
+            <span class="setting-close">&times;</span>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-flex" style="margin-bottom: 50px;">
+                        <h2 class="modal-title">Shop</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="uitleg-text">
+                            test
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="friends-modal">
+        <div class="setting-modal-content">
+            <span class="setting-close">&times;</span>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-flex" style="margin-bottom: 50px;">
+                        <h2 class="modal-title">Friends</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="uitleg-text text-center">
+                            Deel je vooruitgang op social media!
+                        </p>
+                    </div>
+                    <div class="col-12 center-flex">
+                        <h3 class="modal-text" style="display: block;">Facebook</h3>
+                        <h3 class="modal-text" style="display: block;">Google</h3>
+                        <h3 class="modal-text" style="display: block;">Instagram</h3>
+                        <h3 class="modal-text" style="display: block;">Pinterest</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="leave-modal">
+        <div class="setting-modal-content">
+            <span class="setting-close">&times;</span>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-flex" style="margin-bottom: 50px;">
+                        <h2 class="modal-title">Weet je zeker dat je wilt stoppen</h2>
+                    </div>
+                    <div class="col-6" style="display: flex; justify-content: center;">
+                        <button>Ja</button>
+                    </div>
+                    <div class="col-6" style="display: flex; justify-content: center;">
+                        <button>Nee</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="module" src="js/scripts.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    transition: all .2s ease;
+}
+
+.top-left {
+    height: 313px;
+    width: 360px;
+    z-index: 9999;
+    position: absolute;
+    left: 98px;
+    top: 105px;
+}
+
+.top-left-center {
+    height: 313px;
+    width: 360px;
+    z-index: 9999;
+    position: absolute;
+    left: 556px;
+    top: 105px;
+}
+
+.top-right-center {
+    height: 313px;
+    width: 360px;
+    z-index: 9999;
+    position: absolute;
+    left: 1013px;
+    top: 105px;
+}
+
+.top-right {
+    height: 313px;
+    width: 360px;
+    z-index: 9999;
+    position: absolute;
+    left: 1470px;
+    top: 105px;
+}
+
+
+.bottom-left {
+    height: 313px;
+    width: 229px;
+    z-index: 9999;
+    position: absolute;
+    left: 1013px;
+    top: 523px;
+}
+
+
+.bottom-center {
+    height: 313px;
+    width: 229px;
+    z-index: 9999;
+    position: absolute;
+    left: 1307px;
+    top: 523px;
+}
+
+.bottom-right {
+    height: 313px;
+    width: 229px;
+    z-index: 9999;
+    position: absolute;
+    left: 1601px;
+    top: 523px;
+}
+
+.menu {
+    height: 120px;
+    width: 120px;
+    background-image: url(../assets/images/Group\ 557.png);
+    background-size: cover;
+    z-index: 9999;
+    position: absolute;
+    left: 26px;
+    bottom: 26px;
+}
+
+.shop {
+    height: 120px;
+    width: 120px;
+    background-image: url(../assets/images/Group\ 995.png);
+    background-size: cover;
+    z-index: 9999;
+    position: absolute;
+    left: 26px;
+    bottom: 172px;
+}
+
+.shop:hover {
+    cursor: pointer;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+.container-custom {
+    position: absolute;
+    left: 180px;
+    top: 0;
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setting-modal, .help-modal, .shop-modal, .friends-modal, .leave-modal {
+    display: none;
+    width: 1400px;
+    height: 800px;
+    background-color: #FCC92F;
+    z-index: 9999999;
+    transition: all .2s ease;
+    border-radius: 36px;
+}
+.setting-close:hover {
+    cursor: pointer;
+}
+.setting-modal-content {
+    padding: 60px;
+}
+
+.sidemenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FCC92F;
+    position: absolute;
+    left: -180px;
+    top: 0;
+    width: 177px;;
+    height: 100vh;
+    transition: all .2s ease;
+    z-index: 99999;
+}
+
+.sidemenu-settings {
+    height: 120px;
+    width: 120px;
+    background-image: url(../assets/images/Group\ 546.png);
+    background-size: cover;
+    margin: 28px 0px;
+}
+
+.sidemenu-help {
+    height: 120px;
+    width: 120px;
+    background-image: url(../assets/images/Group\ 547.png);
+    background-size: cover;
+    margin: 28px 0px;
+}
+
+.sidemenu-shop {
+    height: 120px;
+    width: 120px;
+    background-image: url(../assets/images/Group\ 548.png);
+    background-size: cover;
+    margin: 28px 0px;
+}
+
+.sidemenu-friends {
+    height: 120px;
+    width: 120px;
+    background-image: url(../assets/images/Group\ 549.png);
+    background-size: cover;
+    margin: 28px 0px;
+}
+
+.sidemenu-leave {
+    height: 120px;
+    width: 120px;
+    background-image: url(../assets/images/Group\ 550.png);
+    background-size: cover;
+    margin: 28px 0px;
+}
+
+.sidemenu-settings:hover {
+    cursor: pointer;
+}
+
+.sidemenu-help:hover {
+    cursor: pointer;
+}
+
+.sidemenu-shop:hover {
+    cursor: pointer;
+}
+
+.sidemenu-friends:hover {
+    cursor: pointer;
+}
+
+.sidemenu-leave:hover {
+    cursor: pointer;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.modal-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0px;
+}
+.bar {
+    max-width: 340px;
+    padding: 10px 0px;
+}
+
+.uitleg-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    right: 160px;
+    width: 60px;
+    height: 34px;
+    margin-top: 17px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
